@@ -1,0 +1,37 @@
+[gd_scene load_steps=6 format=3 uid="uid://bqusv5k2pgve2"]
+
+[ext_resource type="PackedScene" path="res://Character/character_body_2d.tscn" id="1_qw3u7"]
+[ext_resource type="Texture2D" uid="uid://dnmmpg1fpyl1t" path="res://Assets/sprites/bedroom.png" id="1_xtl7c"]
+[ext_resource type="Texture2D" uid="uid://cb7khetyowvx2" path="res://Assets/sprites/bed bedglow.png" id="2_k5jub"]
+
+[sub_resource type="PhysicsMaterial" id="PhysicsMaterial_qw3u7"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_qw3u7"]
+size = Vector2(801.66705, 623.33356)
+
+[node name="Node2D" type="Node2D"]
+
+[node name="CharacterBody2D" parent="." instance=ExtResource("1_qw3u7")]
+position = Vector2(49.169735, 496.27267)
+scale = Vector2(1.451, 1.451)
+collision_layer = 3
+
+[node name="Bedroom" type="Sprite2D" parent="."]
+show_behind_parent = true
+position = Vector2(576, 324)
+scale = Vector2(0.59971064, 0.59999985)
+texture = ExtResource("1_xtl7c")
+
+[node name="StaticBody2D" type="StaticBody2D" parent="."]
+physics_material_override = SubResource("PhysicsMaterial_qw3u7")
+
+[node name="BedBedglow" type="Sprite2D" parent="StaticBody2D"]
+position = Vector2(902.00006, 380.00003)
+scale = Vector2(0.5999999, 0.5999999)
+texture = ExtResource("2_k5jub")
+hframes = 2
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D"]
+position = Vector2(908, 423)
+scale = Vector2(0.5999999, 0.5999999)
+shape = SubResource("RectangleShape2D_qw3u7")
