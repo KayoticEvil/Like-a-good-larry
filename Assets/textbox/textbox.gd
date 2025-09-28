@@ -23,9 +23,30 @@ func displayText(textToDisplay: String):
 	
 	if size.x > MAX_WIDTH:
 		label.autowrap_mode = TextServer.AUTOWRAP_WORD
-		await resized
-		await resized
+		await resized #waiting for x to resize
+		await resized #waiting for y to resize
 		custom_minimum_size.y = size.y
 		
 	global_position.x -=size.x/2
 	global_position.y -= size.y + 24
+	
+	label.text = ""
+	displayLetter()
+
+func displayLetter():
+	label.text += text[letterIndex]
+	letterIndex += 1
+	if letterIndex >= text.length():
+		finishedDisplaying.emit()
+		return
+	match text[letterIndex]:
+		"!", ".", "?",  ",":
+			timer.start(punctuationTime)
+		" ":
+			timer.start(spaceTime)
+		_:
+			timer.start(letterTime)
+			
+
+func _on_letter_display_timer_timeout():
+	displayLetter() # Replace with function body.
