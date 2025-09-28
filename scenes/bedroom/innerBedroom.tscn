@@ -13,9 +13,8 @@ size = Vector2(933.366, 876.6669)
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_qw3u7"]
 size = Vector2(744.1669, 623.33356)
 
-[sub_resource type="Animation" id="Animation_epjqs"]
-resource_name = "glow"
-loop_mode = 1
+[sub_resource type="Animation" id="Animation_rmdty"]
+length = 0.001
 tracks/0/type = "value"
 tracks/0/imported = false
 tracks/0/enabled = true
@@ -29,8 +28,9 @@ tracks/0/keys = {
 "values": [0]
 }
 
-[sub_resource type="Animation" id="Animation_rmdty"]
-length = 0.001
+[sub_resource type="Animation" id="Animation_epjqs"]
+resource_name = "glow"
+loop_mode = 1
 tracks/0/type = "value"
 tracks/0/imported = false
 tracks/0/enabled = true

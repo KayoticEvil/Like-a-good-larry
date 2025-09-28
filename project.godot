@@ -18,7 +18,6 @@ config/icon="res://icon.svg"
 [autoload]
 
 DialogueManager="*res://Assets/textbox/DialogueManager.gd"
-Textbox="*res://Assets/textbox/textbox.gd"
 
 [display]
 

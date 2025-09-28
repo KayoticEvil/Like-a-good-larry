@@ -1,6 +1,9 @@
 extends Area2D
 
 @onready var animations = $AnimationPlayer
+@onready var textBox = $textBox
+
+const lines: Array[String] = ["Go to Sleep?"]
 
 func _ready() -> void:
 	animations.play("noGlow")
@@ -10,6 +13,7 @@ func _ready() -> void:
 func on_body_entered(body: Node) -> void:
 	if body is CharacterBody2D:
 		animations.play("glow")
+		DialogueManager.startDialogue(global_position,lines)
 
 func on_body_exited(body: Node) -> void:
 	if body is CharacterBody2D:
