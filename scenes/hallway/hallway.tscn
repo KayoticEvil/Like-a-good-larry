@@ -1,0 +1,15 @@
+[gd_scene load_steps=3 format=3 uid="uid://cy4tyrtnj77jb"]
+
+[ext_resource type="Texture2D" uid="uid://cyedqw0cvujjp" path="res://scenes/hallway/white door.png" id="1_bswam"]
+[ext_resource type="PackedScene" uid="uid://cpbu0vyeomnyd" path="res://Character/character_body_2d.tscn" id="2_8ww00"]
+
+[node name="Hallway" type="Node2D"]
+
+[node name="WhiteDoor" type="Sprite2D" parent="."]
+position = Vector2(574.62506, 316.0001)
+scale = Vector2(1.8868464, 1.784314)
+texture = ExtResource("1_bswam")
+
+[node name="CharacterBody2D" parent="." instance=ExtResource("2_8ww00")]
+position = Vector2(46, 493.00003)
+scale = Vector2(1.475, 1.475)
