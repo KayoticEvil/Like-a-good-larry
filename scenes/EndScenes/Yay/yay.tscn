@@ -1,0 +1,71 @@
+[gd_scene load_steps=6 format=3 uid="uid://cuudvk4gnot1d"]
+
+[ext_resource type="Script" uid="uid://bkleqc7ivut4g" path="res://yay.gd" id="1_ql6dm"]
+[ext_resource type="Texture2D" uid="uid://dfyqihqdm6rkc" path="res://colorful-confetti-celebration-stockcake.jpg" id="2_8p6x6"]
+[ext_resource type="Texture2D" uid="uid://biv521cd4vode" path="res://larry.png" id="3_1mbjv"]
+[ext_resource type="Texture2D" uid="uid://3iakx4pxevyo" path="res://NicePng_scroll-banner-png_391406.png" id="4_ejb1p"]
+[ext_resource type="FontFile" uid="uid://bgffeeltlbsb4" path="res://determination.ttf" id="5_162jc"]
+
+[node name="Control" type="Control"]
+layout_mode = 3
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -580.0
+offset_top = -327.5
+offset_right = 580.0
+offset_bottom = 327.5
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_ql6dm")
+
+[node name="ColorfulConfettiCelebrationStockcake" type="Sprite2D" parent="."]
+position = Vector2(579.5, 329.49997)
+scale = Vector2(1.5700551, 1.5539216)
+texture = ExtResource("2_8p6x6")
+
+[node name="Larry" type="Sprite2D" parent="."]
+position = Vector2(193, 421.5)
+scale = Vector2(1, 0.944)
+texture = ExtResource("3_1mbjv")
+
+[node name="NicePngScrollBannerPng391406" type="Sprite2D" parent="."]
+position = Vector2(602, 154.5)
+scale = Vector2(1, 0.4513158)
+texture = ExtResource("4_ejb1p")
+
+[node name="NicePngScrollBannerPng391407" type="Sprite2D" parent="."]
+position = Vector2(790.5, 405.87503)
+scale = Vector2(0.66333336, 0.51250017)
+texture = ExtResource("4_ejb1p")
+
+[node name="Label" type="Label" parent="."]
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -407.0
+offset_top = 12.5
+offset_right = 372.0
+offset_bottom = 248.77696
+grow_horizontal = 2
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("5_162jc")
+theme_override_font_sizes/font_size = 45
+text = "Congratulations, You Did It!"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Label" type="Label" parent="Label"]
+layout_mode = 0
+offset_left = 371.0
+offset_top = 337.0
+offset_right = 839.0
+offset_bottom = 408.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("5_162jc")
+theme_override_font_sizes/font_size = 25
+text = "Good job for successfully avoiding 
+the accidents of everyday life"
