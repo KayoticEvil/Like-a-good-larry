@@ -1,4 +1,4 @@
-[gd_scene load_steps=11 format=3 uid="uid://5agxa6njoji8"]
+[gd_scene load_steps=13 format=3 uid="uid://5agxa6njoji8"]
 
 [ext_resource type="Texture2D" uid="uid://dh4au8yd3j3gr" path="res://Assets/sprites/kitchen.png" id="1_crek3"]
 [ext_resource type="PackedScene" uid="uid://cpbu0vyeomnyd" path="res://Character/character_body_2d.tscn" id="2_6r6p3"]
@@ -7,6 +7,16 @@
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_rdq0i"]
 size = Vector2(460.64752, 324.5)
+
+[sub_resource type="FontVariation" id="FontVariation_crek3"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_6r6p3"]
+font = SubResource("FontVariation_crek3")
+font_size = 25
+outline_size = 40
+outline_color = Color(0, 0, 0, 1)
+shadow_size = 30
+shadow_color = Color(0, 0, 0, 0.72156864)
 
 [sub_resource type="Animation" id="Animation_t042q"]
 resource_name = "noGlow"
@@ -86,6 +96,15 @@ hframes = 2
 [node name="CollisionShape2D" type="CollisionShape2D" parent="stoveArea"]
 position = Vector2(260.67624, 490.25)
 shape = SubResource("RectangleShape2D_rdq0i")
+
+[node name="Label" type="Label" parent="stoveArea/CollisionShape2D"]
+visible = false
+offset_left = -186.67624
+offset_top = -141.25
+offset_right = -2.009552
+offset_bottom = -92.25
+text = "Cook dinner?"
+label_settings = SubResource("LabelSettings_6r6p3")
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="stoveArea"]
 libraries = {

@@ -1,0 +1,54 @@
+[gd_scene load_steps=5 format=3 uid="uid://b4ut1nd3ufskp"]
+
+[ext_resource type="FontFile" uid="uid://2acq1wqfjxdt" path="res://Assets/determination.ttf" id="1_1x07s"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_fbc7a"]
+bg_color = Color(0, 0, 0, 1)
+border_width_left = 5
+border_width_top = 5
+border_width_right = 5
+border_width_bottom = 5
+border_color = Color(1, 1, 1, 1)
+
+[sub_resource type="Theme" id="Theme_ruvw3"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_upt7h"]
+
+[node name="Textbox" type="CanvasLayer"]
+
+[node name="MarginContainer" type="MarginContainer" parent="."]
+anchors_preset = -1
+anchor_top = 0.961
+anchor_right = 1.0
+anchor_bottom = 0.99200004
+offset_top = -204.72803
+offset_bottom = 5.18396
+theme_override_constants/margin_left = 32
+theme_override_constants/margin_right = 32
+theme_override_constants/margin_bottom = 32
+
+[node name="Panel" type="Panel" parent="MarginContainer"]
+layout_mode = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_fbc7a")
+
+[node name="MarginContainer" type="MarginContainer" parent="MarginContainer"]
+layout_mode = 2
+theme_override_constants/margin_left = 16
+theme_override_constants/margin_top = 16
+theme_override_constants/margin_right = 16
+theme_override_constants/margin_bottom = 16
+
+[node name="Panel" type="Panel" parent="MarginContainer/MarginContainer"]
+layout_mode = 2
+
+[node name="HBoxContainer" type="HBoxContainer" parent="MarginContainer/MarginContainer"]
+layout_mode = 2
+
+[node name="Label" type="Label" parent="MarginContainer/MarginContainer/HBoxContainer"]
+layout_mode = 2
+size_flags_stretch_ratio = 8.0
+theme = SubResource("Theme_ruvw3")
+theme_override_fonts/font = ExtResource("1_1x07s")
+theme_override_font_sizes/font_size = 50
+text = "A quick brown fox jumps over the lazy dog"
+label_settings = SubResource("LabelSettings_upt7h")
