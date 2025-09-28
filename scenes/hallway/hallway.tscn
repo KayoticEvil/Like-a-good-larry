@@ -1,0 +1,29 @@
+[gd_scene load_steps=5 format=3 uid="uid://cy4tyrtnj77jb"]
+
+[ext_resource type="Texture2D" uid="uid://b2cj4wh4vahq5" path="res://scenes/hallway/white door.png" id="1_plwdw"]
+[ext_resource type="Script" uid="uid://brmfxrts254rh" path="res://scenes/hallway/leftdoor.gd" id="2_bswam"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_bswam"]
+size = Vector2(205, 474.5)
+
+[sub_resource type="GDScript" id="GDScript_bswam"]
+script/source = "extends CollisionShape2D
+"
+
+[node name="Node2D" type="Node2D"]
+
+[node name="door_background" type="TextureRect" parent="."]
+offset_right = 1152.0
+offset_bottom = 648.0
+mouse_filter = 2
+texture = ExtResource("1_plwdw")
+
+[node name="left_door_clickable" type="Area2D" parent="."]
+script = ExtResource("2_bswam")
+
+[node name="leftdoorcollision" type="CollisionShape2D" parent="left_door_clickable"]
+position = Vector2(268.5, 336.75)
+shape = SubResource("RectangleShape2D_bswam")
+script = SubResource("GDScript_bswam")
+
+[connection signal="input_event" from="left_door_clickable" to="left_door_clickable" method="_on_left_door_clickable_input_event"]
