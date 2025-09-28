@@ -3,7 +3,7 @@
 [ext_resource type="Texture2D" uid="uid://taxwpwuotbte" path="res://scenes/EndScenes/Housefire/fire.png" id="1_pebnq"]
 [ext_resource type="Texture2D" uid="uid://crgi6nisholee" path="res://scenes/EndScenes/Housefire/larrysad.png" id="2_bykis"]
 [ext_resource type="Texture2D" uid="uid://dituu0xqqjq5l" path="res://scenes/EndScenes/jake.png" id="3_anpef"]
-[ext_resource type="FontFile" uid="uid://dosce1gwomkl5" path="res://scenes/EndScenes/determination/determination.ttf" id="3_bykis"]
+[ext_resource type="FontFile" uid="uid://dosce1gwomkl5" path="res://Main/menu/determination/determination.ttf" id="3_bykis"]
 
 [node name="housefire" type="Node2D"]
 

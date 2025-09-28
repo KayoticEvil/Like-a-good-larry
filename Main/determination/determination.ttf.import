@@ -2,13 +2,13 @@
 
 importer="font_data_dynamic"
 type="FontFile"
-uid="uid://dosce1gwomkl5"
-path="res://.godot/imported/determination.ttf-f1c44b31127429516f68bf0055033314.fontdata"
+uid="uid://m4quyp6uvs58"
+path="res://.godot/imported/determination.ttf-c7e90a250a3afba14c05b5e67b6bf4bf.fontdata"
 
 [deps]
 
-source_file="res://scenes/EndScenes/determination/determination.ttf"
-dest_files=["res://.godot/imported/determination.ttf-f1c44b31127429516f68bf0055033314.fontdata"]
+source_file="res://Main/determination/determination.ttf"
+dest_files=["res://.godot/imported/determination.ttf-c7e90a250a3afba14c05b5e67b6bf4bf.fontdata"]
 
 [params]
 
