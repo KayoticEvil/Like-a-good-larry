@@ -1,0 +1,77 @@
+[gd_scene load_steps=5 format=3 uid="uid://brpfep08bvrmy"]
+
+[ext_resource type="Texture2D" uid="uid://taxwpwuotbte" path="res://scenes/EndScenes/Housefire/fire.png" id="1_pebnq"]
+[ext_resource type="Texture2D" uid="uid://crgi6nisholee" path="res://scenes/EndScenes/Housefire/larrysad.png" id="2_bykis"]
+[ext_resource type="Texture2D" uid="uid://dituu0xqqjq5l" path="res://scenes/EndScenes/jake.png" id="3_anpef"]
+[ext_resource type="FontFile" uid="uid://dosce1gwomkl5" path="res://scenes/EndScenes/determination/determination.ttf" id="3_bykis"]
+
+[node name="housefire" type="Node2D"]
+
+[node name="background" type="ColorRect" parent="."]
+offset_right = 1152.0
+offset_bottom = 649.0
+color = Color(0.039215688, 0.039215688, 0.19607843, 1)
+
+[node name="fire in back" type="TextureRect" parent="."]
+offset_left = -164.0
+offset_top = -72.0
+offset_right = 1280.0
+offset_bottom = 849.0
+texture = ExtResource("1_pebnq")
+
+[node name="title box" type="ColorRect" parent="."]
+offset_left = 58.0
+offset_top = 72.0
+offset_right = 642.0
+offset_bottom = 132.0
+color = Color(1, 0.3529412, 0.23137255, 1)
+
+[node name="sad larry" type="TextureRect" parent="."]
+offset_left = 646.0
+offset_top = 151.0
+offset_right = 1087.0
+offset_bottom = 651.0
+texture = ExtResource("2_bykis")
+
+[node name="your house burned" type="Label" parent="."]
+offset_left = 77.0
+offset_top = 70.0
+offset_right = 1230.0
+offset_bottom = 713.0
+theme_override_fonts/font = ExtResource("3_bykis")
+theme_override_font_sizes/font_size = 45
+text = "Your house burned down."
+
+[node name="Button" type="Button" parent="."]
+offset_right = 8.0
+offset_bottom = 8.0
+
+[node name="jake" type="TextureRect" parent="."]
+offset_left = 69.0
+offset_top = 148.0
+offset_right = 526.0
+offset_bottom = 648.0
+texture = ExtResource("3_anpef")
+
+[node name="actual text box" type="ColorRect" parent="."]
+offset_left = 257.0
+offset_top = 142.0
+offset_right = 677.0
+offset_bottom = 231.0
+color = Color(1, 0.3529412, 0.23137255, 1)
+
+[node name="actual text" type="Label" parent="."]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 264.0
+offset_top = 142.0
+offset_right = 1184.0
+offset_bottom = 229.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_fonts/font = ExtResource("3_bykis")
+theme_override_font_sizes/font_size = 20
+text = "But don't worry! Jake has you covered! 
+Statefarm covers fire damage to your
+personal property."
