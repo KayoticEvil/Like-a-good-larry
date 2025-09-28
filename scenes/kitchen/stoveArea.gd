@@ -14,3 +14,4 @@ func on_body_entered(body: Node) -> void:
 func on_body_exited(body: Node) -> void:
 	if body is CharacterBody2D:
 		animations.play("noGlow")
+		

@@ -1,10 +1,10 @@
 [gd_scene load_steps=6 format=3 uid="uid://cuudvk4gnot1d"]
 
-[ext_resource type="Script" uid="uid://bkleqc7ivut4g" path="res://yay.gd" id="1_ql6dm"]
-[ext_resource type="Texture2D" uid="uid://dfyqihqdm6rkc" path="res://colorful-confetti-celebration-stockcake.jpg" id="2_8p6x6"]
-[ext_resource type="Texture2D" uid="uid://biv521cd4vode" path="res://larry.png" id="3_1mbjv"]
-[ext_resource type="Texture2D" uid="uid://3iakx4pxevyo" path="res://NicePng_scroll-banner-png_391406.png" id="4_ejb1p"]
-[ext_resource type="FontFile" uid="uid://bgffeeltlbsb4" path="res://determination.ttf" id="5_162jc"]
+[ext_resource type="Script" uid="uid://dxxjtrpkt6dcr" path="res://scenes/EndScenes/Yay/yay.gd" id="1_ql6dm"]
+[ext_resource type="Texture2D" uid="uid://b7jrig0xf6rx6" path="res://scenes/EndScenes/Yay/colorful-confetti-celebration-stockcake.jpg" id="2_8p6x6"]
+[ext_resource type="Texture2D" uid="uid://ce2yc5d4xxxdw" path="res://Assets/sprites/larry.png" id="3_1mbjv"]
+[ext_resource type="Texture2D" uid="uid://moftru8nosd5" path="res://scenes/EndScenes/Yay/NicePng_scroll-banner-png_391406.png" id="4_ejb1p"]
+[ext_resource type="FontFile" uid="uid://2acq1wqfjxdt" path="res://Assets/determination.ttf" id="5_162jc"]
 
 [node name="Control" type="Control"]
 layout_mode = 3
@@ -22,12 +22,12 @@ grow_vertical = 2
 script = ExtResource("1_ql6dm")
 
 [node name="ColorfulConfettiCelebrationStockcake" type="Sprite2D" parent="."]
-position = Vector2(579.5, 329.49997)
-scale = Vector2(1.5700551, 1.5539216)
+position = Vector2(580.00006, 326.99997)
+scale = Vector2(1.5824176, 1.5857843)
 texture = ExtResource("2_8p6x6")
 
 [node name="Larry" type="Sprite2D" parent="."]
-position = Vector2(193, 421.5)
+position = Vector2(-10, 411.49994)
 scale = Vector2(1, 0.944)
 texture = ExtResource("3_1mbjv")
 
